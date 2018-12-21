@@ -1,0 +1,14 @@
+build/*
+
+*.csv
+
+*.log
+*.out
+*.avi
+*.zip
+
+*.bak
+*.sav
+
+*~
+
