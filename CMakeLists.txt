@@ -11,10 +11,10 @@ find_path(EIGEN_INCLUDE_DIR Eigen/Core
 message("Please use C++11 to compile octree")
 set (CMAKE_CXX_STANDARD 11)
 
-include_directories(${CMAKE_CURRENT_BINARY_DIR} ${EIGEN_INCLUDE_DIR})
+include_directories(${CMAKE_CURRENT_BINARY_DIR} ${EIGEN_INCLUDE_DIR} octree)
 
 add_definitions(-O3)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} example/main.cpp)
 
 target_link_libraries(${PROJECT_NAME} pthread)
